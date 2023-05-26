@@ -1,8 +1,9 @@
 body {
   overflow-x: hidden;
   position: relative;
-  color: $black;
-  @include font('Raleway', 500);
+  color: $white2;
+  background-color: $bg-body;
+  @include font('Work Sans', 400);
 
   &.active-body {
     overflow: hidden;
@@ -24,7 +25,7 @@ button {
 }
 
 .container {
-  max-width: 1310px;
+  max-width: 1390px;
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
