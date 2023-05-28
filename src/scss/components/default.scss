@@ -3,11 +3,22 @@ body {
   position: relative;
   color: $white2;
   background-color: $bg-body;
-  @include font('Work Sans', 400);
+  font-family: $font-primary;
+  // @include font('Work Sans', 400);
 
   &.active-body {
     overflow: hidden;
   }
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1 1 auto;
 }
 
 h1,

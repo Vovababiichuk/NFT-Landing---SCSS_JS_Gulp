@@ -2,13 +2,10 @@
 "title": "Главная"
 })
 
-<main>
-   <div class="first">
-      @@include('html/header.html', {})
-
-      <div class="first__main">
-         
-      </div>
-   </div>
-</main>
-@@include('html/footer.html', {})
+<div class="wrapper">
+   @@include('html/header.html', {})
+   <main class="main">
+      @@include('html/hero.html', {})
+   </main>
+   @@include('html/footer.html', {})
+</div>

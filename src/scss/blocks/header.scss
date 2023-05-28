@@ -1,4 +1,9 @@
-.header__main {
+.header {
+   padding-top: 37px;
+   min-height: 100%;
+}
+
+.header__content {
    display: flex;
    align-items: center;
    justify-content: space-between;
@@ -49,14 +54,4 @@
    &:hover {
       background-color: transparent;
    }
-}
-
-.nav__btn-text {
-   border-bottom: 2px solid transparent;
-   transition: border-bottom 0.3s ease-in-out;
-}
-
-.nav__btn-text:hover {
-   border-bottom: 2px solid $white;
-   color: $white;
 }
