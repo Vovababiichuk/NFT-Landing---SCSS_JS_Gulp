@@ -3,7 +3,7 @@
 	font-weight: $fw;
 }
 
-@mixin flex($align-items:stretch, $justify-content:flex-start, $flex-wrap:nowrap, $flex-direction:row) {
+@mixin flex($align-items: stretch, $justify-content: flex-start, $flex-wrap: nowrap, $flex-direction: row) {
 	display: flex;
 	align-items: $align-items;
 	justify-content: $justify-content;
@@ -11,6 +11,27 @@
 	flex-direction: $flex-direction;
 }
 
-@mixin smooth-btn($speed:.3s) {
+@mixin smooth-btn($speed: .3s) {
 	transition: background $speed, color $speed, border-color $speed;
+}
+
+@mixin title {
+	color: $white2;
+	font-size: 64px;
+	font-family: 'Oxanium', cursive;
+	font-weight: 700;
+	line-height: 130px;
+	text-align: center;
+}
+
+@mixin decor {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: -40px;
+	transform: translateY(-50%);
+	width: 110px;
+	height: 110px;
+	border-radius: 50%;
+	z-index: -1;
 }

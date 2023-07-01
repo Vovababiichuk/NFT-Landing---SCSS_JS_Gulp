@@ -1,0 +1,51 @@
+.auctions {
+   padding-bottom: 200px;
+}
+
+.auctions__title {
+   @include title;
+}
+
+.auctions__title-text {
+   position: relative;
+}
+
+.auctions__title-purple::after {
+   @include decor;
+   background: $purple;
+}
+
+.auctions__img {
+   position: relative;
+   margin-bottom: 28px;
+
+   img {
+      object-fit: cover;
+   }
+
+   span {
+      position: absolute;
+      display: block;
+      bottom: 0;
+      left: 0;
+   }
+}
+
+.auctions__avatar-inner {
+   display: flex;
+   align-items: center;
+   // justify-content: space-between;
+}
+
+.auctions__avatar {
+   display: flex;
+   align-items: center;
+   column-gap: 16px;
+   margin-bottom: 28px;
+
+   .auctions__avatar-text {
+      span {
+         display: block;
+      }
+   }
+}

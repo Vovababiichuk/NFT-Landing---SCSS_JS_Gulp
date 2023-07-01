@@ -14,3 +14,15 @@ import {
 import AOS from 'aos';
 
 flsFunctions.isWebp();
+
+const swiper = new Swiper('.auctions-slider', {
+	loop: true,
+	navigation: {
+		nextEl: '.swiper-btn-next1',
+		prevEl: '.swiper-btn-prev1',
+	},
+	modules: [Navigation],
+	autoHeight: true,
+	speed: 500,
+	slidesPerView: 2.8,
+});
